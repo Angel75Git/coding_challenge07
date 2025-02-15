@@ -49,3 +49,10 @@ function calculateShippingCost(weight, location, expedited = false){
 }//Test Data
 console.log(`Shipping Cost: $${calculateShippingCost(10, "USA", true).toFixed(2)}`);
 console.log(`Shipping Cost: $${calculateShippingCost(5, "Canada", false).toFixed(2)}`);
+
+//Task 5
+function calculateloanInterest(principle, rate, years){
+    return principle * rate * years;
+} //Calculating interest with varying rates and years
+console.log(`Total Interest: $${calculateloanInterest(1000, 0.05, 3).toFixed(2)}`);
+console.log(`Total Interest: $${calculateloanInterest(5000, 0.07, 5).toFixed(2)}`);
