@@ -60,4 +60,12 @@ console.log(calculateloanInterest(1000, 0.05, 3));
 console.log(calculateloanInterest(5000, 0.07, 5));
 
 
-//Task 6
+//Task 6 Higher Order Functions
+function filterHighValueTransactions(transactions, filterFunction){
+    return transactions.filter(filterFunction);
+}
+
+let transactions = [500, 1200, 3000, 800, 2200]
+//Will filter out 1200, 3000, and 2200
+console.log(filterHighValueTransactions(transactions, amount => amount > 1000));
+
