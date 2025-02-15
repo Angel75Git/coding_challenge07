@@ -16,3 +16,20 @@ const calculateHourlyWage = function(salary, hoursPerWeek){
 
 console.log(calculateHourlyWage(52000, 40)); //Test Data
 console.log(calculateHourlyWage(75000, 35));
+
+//Task 3
+//Arrow Function Loyal Discount
+const calculateLoyaltyDiscount = (amount, years) => {
+    
+    if (years >= 5) amount -= amount * 0.15
+    else if (years >= 3) amount -= amount * 0.1
+    else if (years < 3 ) amount -= amount *0.05
+
+//Using if else to filter out discount rates
+
+    console.log(`Discounted Price: $${amount.toFixed(2)}`);
+}; 
+
+//Test Cases
+console.log(calculateLoyaltyDiscount(100, 6));
+console.log(calculateLoyaltyDiscount(200, 2));
