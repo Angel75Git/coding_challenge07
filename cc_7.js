@@ -52,7 +52,12 @@ console.log(`Shipping Cost: $${calculateShippingCost(5, "Canada", false).toFixed
 
 //Task 5
 function calculateloanInterest(principle, rate, years){
-    return principle * rate * years;
+    let totalInterest = principle * rate * years;
+    return `Total Interest: $${totalInterest.toFixed(2)}`
 } //Calculating interest with varying rates and years
-console.log(`Total Interest: $${calculateloanInterest(1000, 0.05, 3).toFixed(2)}`);
-console.log(`Total Interest: $${calculateloanInterest(5000, 0.07, 5).toFixed(2)}`);
+
+console.log(calculateloanInterest(1000, 0.05, 3));
+console.log(calculateloanInterest(5000, 0.07, 5));
+
+
+//Task 6
