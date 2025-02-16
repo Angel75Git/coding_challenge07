@@ -10,7 +10,7 @@ console.log(`Total Invoice: $${calculateInvoice(500, 0.1, 20).toFixed(2)}`);
 //Function expression starting with const variable
 const calculateHourlyWage = function(salary, hoursPerWeek){
     let hourWage = salary / (hoursPerWeek * 52);
-    console.log(`Hourly Wage: $${hourWage.toFixed(2)}`);
+    return `Hourly Wage: $${hourWage.toFixed(2)}`;
 }; 
 //Using a variable to store wage
 
