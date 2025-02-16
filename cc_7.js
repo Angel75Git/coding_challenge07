@@ -83,3 +83,14 @@ let budget = createBudgetTracker();
 console.log(budget(200));  //Test Casess
 console.log(budget(150));
 
+//Task 8: Recursion
+function calculateGrowth(years, revenue){
+    if (years >= 10){
+        return `Projected Revenue: $${revenue.toFixed(2)}`;
+    }//Calling the function again to add one more year and 5%
+    return calculateGrowth(years + 1, revenue * 1.05);
+} 
+//Test Data
+console.log(calculateGrowth(8, 1000));
+console.log(calculateGrowth(5, 5000));
+
